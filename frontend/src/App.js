@@ -16,7 +16,7 @@ function App() {
     setData([]); // Yeni yüklemede eskiyi temizle
     try {
       // Buradaki URL'yi Backend'i Render'a yükledikten sonra alacağımız URL ile değiştireceğiz.
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const API_URL = process.env.REACT_APP_API_URL || 'https://pdftocsv-r9zm.onrender.com';
 const res = await axios.post(`${API_URL}/upload`, formData);
       // Backend'den gelen verinin array olduğundan emin olalım
       if (Array.isArray(res.data)) {
